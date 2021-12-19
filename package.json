@@ -8,6 +8,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@svgr/webpack": "^6.1.2",
     "graphql": "^15.7.2",
     "graphql-request": "^3.6.1",
     "html-react-parser": "^1.4.0",

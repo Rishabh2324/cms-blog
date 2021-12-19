@@ -8,28 +8,28 @@
 @mixin h1($color: $primary-black) {
   @include common();
   font-weight: 600;
-  font-size: 1.875rem;
   color: $color;
+  font-size: 1.875rem;
 }
 
 @mixin h2($color: $primary-black) {
   @include common();
   font-weight: 600;
-  font-size: 1.5rem;
   color: $color;
+  font-size: 1.5rem;
 }
 
 @mixin h3($color: $primary-black) {
   @include common();
   font-weight: 600;
-  font-size: 1.125rem;
   color: $color;
+  font-size: 1.125rem;
 }
 
 @mixin p($color: $primary-black) {
   @include common();
-  font-size: 1.125rem;
   color: $color;
+  font-size: 1.125rem;
 }
 
 @mixin button-text-one {

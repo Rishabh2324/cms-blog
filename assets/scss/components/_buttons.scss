@@ -1,0 +1,10 @@
+@mixin common {
+  border: 0px;
+  border-radius: 6.25rem;
+}
+@mixin button-one($color: $primary-white,$backgroundColor:$primary-black) {
+  @include button-text-one();
+  color:$color;
+  background-color: $backgroundColor;
+  padding: .75rem 1.5rem;
+}

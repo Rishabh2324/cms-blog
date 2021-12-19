@@ -4,6 +4,11 @@
   padding: 2rem;
 
   &__ImageContainer {
+    display: grid;
+    justify-self: center;
+    max-width: 100%;
+    height: auto;
+    border-radius:3.125rem;
     img {
       width: 100%;
       height: auto;
@@ -13,26 +18,46 @@
   &__Details {
     display: grid;
     grid-template-columns: auto;
+    grid-row-gap: 2rem;
+    text-align: center;
 
     .title {
+      @include h1()
     }
     .authorDetails__section {
       display: grid;
       grid-template-columns: max-content max-content;
       grid-auto-flow: column;
+      justify-content: center;
+      grid-column-gap: 1.25rem;
+
       .details {
         display: grid;
         grid-template-columns: max-content max-content;
+        grid-column-gap: .625rem;
+        align-items: center;
         .author_name {
+          @include p($primary-gray)
         }
         .author_image {
-          width: 24px;
-          img {
+          width: 1.8rem;
+          border-radius:50px;
+          img{
             width: 100%;
             height: auto;
             object-fit: cover;
           }
         }
+      }
+    }
+    &__blogDescription{
+      @include p($primary-gray);
+      max-width: 50rem;
+      margin: auto;
+    }
+    &__readBlogButton{
+      button {
+        @include button-one($primary-white,$primary-pink);
       }
     }
   }

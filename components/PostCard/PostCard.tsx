@@ -2,6 +2,8 @@ import React from "react";
 import moment from "moment";
 import { IPost } from "../../utils/interfaces";
 
+import CalenderIcon from '../../assets/icons/calender.svg'
+
 import styles from "./PostCard.module.scss";
 
 type Props = {
@@ -27,14 +29,17 @@ const PostCard: React.FC<Props> = ({ post }) => {
           </div>
           <div className={styles.details}>
             <div className={styles.author_image}>
-              <img src={author.photo.url} alt={title} />
+              <CalenderIcon />
             </div>
             <p className={styles.author_name}>
               {moment(createdAt).format("MMM DD, YYYY")}
             </p>
           </div>
         </div>
-        <p>{excerpt}</p>
+        <p className={styles.PostCard__Details__blogDescription}>{excerpt}</p>
+        <div className={styles.PostCard__Details__readBlogButton}>
+          <button>Continue Reading</button>
+        </div>
       </div>
     </div>
   );
