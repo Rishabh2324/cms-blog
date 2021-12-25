@@ -5,7 +5,9 @@ body {
   font-family: "Ubuntu", sans-serif;
   font-size: 100%;
   max-width: 1920px;
+  padding: 0 4rem;
   margin: auto;
+  background-color: $primary-gray;
   @media screen and (max-width:$md){
     font-size: 80%;
   }

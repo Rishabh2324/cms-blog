@@ -1,0 +1,19 @@
+.PostWidgetList {
+  @include card();
+  grid-row-gap: 1rem;
+  height: max-content; 
+
+  &__heading{
+    @include h2()
+  }
+
+  &__categoryItem {
+    padding-bottom: .625rem;
+    border-bottom: 0.2px solid $secondary-gray;
+  }
+
+  &__separator {
+    width: 100%;
+    border: 0.2px solid $secondary-gray;
+  }
+}
