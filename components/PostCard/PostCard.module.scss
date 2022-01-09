@@ -1,6 +1,6 @@
 .PostCard {
   @include card();
-  &__ImageContainer{
+  &__ImageContainer {
     display: grid;
     justify-self: center;
     max-width: 100%;
@@ -21,7 +21,7 @@
     align-items: center;
 
     .title {
-      @include h1()
+      @include h1();
     }
     .authorDetails__section {
       display: grid;
@@ -33,15 +33,15 @@
       .details {
         display: grid;
         grid-template-columns: max-content max-content;
-        grid-column-gap: .625rem;
+        grid-column-gap: 0.625rem;
         align-items: center;
         .author_name {
-          @include p($primary-gray)
+          @include p($primary-gray);
         }
         .author_image {
           width: 1.8rem;
-          border-radius:50px;
-          img{
+          border-radius: 50px;
+          img {
             width: 100%;
             height: auto;
             object-fit: cover;
@@ -49,14 +49,14 @@
         }
       }
     }
-    &__blogDescription{
+    &__blogDescription {
       @include p($primary-gray);
       max-width: 50rem;
       margin: auto;
     }
-    &__readBlogButton{
-      button {
-        @include button-one($primary-white,$primary-pink);
+    &__readBlogButton {
+      a {
+        @include button-one($primary-white, $primary-pink);
       }
     }
   }

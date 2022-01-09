@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 
-import { PostCard } from '../../../components'
+import { PostCard } from '..'
 
-import { IPost } from '../../../utils/interfaces';
-import { getPosts } from '../../../services';
+import { IPost } from '../../utils/interfaces';
+import { getPosts } from '../../services';
 
 const PostList: React.FC = () => {
   const [postList, setPostList] = useState<IPost[]>([])
@@ -15,7 +15,7 @@ const PostList: React.FC = () => {
     })()
   }, [])
 
-  return <>{postList?.map((post: IPost) => <PostCard key={post.node.id} post={post} />)}</>
+  return <>{postList?.map((post: IPost) => <PostCard key={post.node.id} post={post.node} />)}</>
 }
 
 export default PostList

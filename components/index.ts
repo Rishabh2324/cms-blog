@@ -1,3 +1,9 @@
-export { default as PostCard} from './PostCard/PostCard';
-export { default as PostWidgetItem } from './PostWidgetItem/PostWidgetItem';
-
+export { default as Header } from "./Header";
+export { default as Layout } from "./Layout";
+export { default as Author } from "./Author";
+export { default as CommentForm } from "./CommentForm";
+export { default as PostCard } from "./PostCard/PostCard";
+export { default as PostWidgetList } from "./PostWidgetList/index";
+export { default as Categories } from "./PostWidgetList/Categories";
+export { default as PostWidgetItem } from "./PostWidgetItem/PostWidgetItem";
+export { default as PostList } from "./PostList";

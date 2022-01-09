@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import { getCategories } from '../../../services';
-
-import { CategoriesEntity } from '../../../utils/interfaces';
+import { getCategories } from '../../services';
+import { CategoriesEntity } from '../../utils/interfaces';
 
 import styles from './PostWidgetList.module.scss';
 
