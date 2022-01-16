@@ -12,6 +12,7 @@ import {
 } from "../../components";
 
 import styles from "./Post.module.scss";
+import Comments from "../../components/Comments";
 
 type Props = {
   post: IPost["node"];
@@ -25,6 +26,8 @@ const PostDetails: React.FC<Props> = ({ post }) => {
           <div className={styles.PostDetails__BlogListWithCategories_blogList}>
             <PostCard post={post} showDetailedPost={true} />
             <Author author={post.author}/>
+            <CommentForm  slug={post.slug}/>
+            <Comments  slug={post.slug}/>
           </div>
           <div
             className={

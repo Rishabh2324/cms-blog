@@ -1,0 +1,47 @@
+.CommentForm {
+  background-color: $primary-white;
+  padding: 1.25rem;
+  border-radius: 1.25rem;
+
+  &__formHeading {
+    @include h3();
+    padding: 0.625rem 0;
+  }
+
+  &__detailTextArea {
+    input {
+      background-color: rgba(243, 244, 246, 1);
+      padding: 1rem;
+      width: 100%;
+      border: none;
+      margin: 0.3125rem 0;
+    }
+  }
+
+  &__commentTextArea {
+    textarea {
+      border: none;
+      background-color: rgba(243, 244, 246, 1);
+      padding: 1rem;
+      width: 100%;
+    }
+  }
+  &__CheckBox {
+    label {
+      @include p();
+    }
+  }
+  &__error {
+    @include p($primary-red);
+  }
+  &__success {
+    @include p($secondary-gray-2);
+  }
+
+  &__submitComment {
+    margin-top: 1.25rem;
+    button {
+      @include button-one($primary-white, $primary-pink);
+    }
+  }
+}
